@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #1a73e8;
-    --secondary-color: #34a853;
-    --accent-color: #fbbc04;
+    --primary-color: #780115;
+    --secondary-color: #f7b638;
+    --accent-color: #f7b638;
     --dark-bg: #1f1f1f;
     --light-bg: #ffffff;
     --text-dark: #202124;
@@ -87,7 +87,7 @@ html {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #780115 0%, #5a000d 100%);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -140,9 +140,9 @@ html {
 }
 
 .btn-primary:hover {
-    background: #1557b0;
+    background: #5a000d;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+    box-shadow: 0 4px 12px rgba(120, 1, 21, 0.3);
 }
 
 .btn-secondary {
@@ -224,7 +224,7 @@ section h3 {
 /* Stats Section */
 .stats-section {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #780115 0%, #5a000d 100%);
     color: white;
 }
 
@@ -295,7 +295,7 @@ section h3 {
 
 /* CTA Section */
 .cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #780115 0%, #5a000d 100%);
     color: white;
     text-align: center;
 }
@@ -338,7 +338,7 @@ section h3 {
 }
 
 .social-links a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* About Page */
@@ -410,7 +410,7 @@ section h3 {
 
 .certification:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(26, 115, 232, 0.2);
+    box-shadow: 0 8px 16px rgba(120, 1, 21, 0.2);
 }
 
 /* Projects Page */
@@ -508,7 +508,7 @@ section h3 {
 }
 
 .tag {
-    background: #e8f0fe;
+    background: #ffe8cc;
     color: var(--primary-color);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
@@ -598,7 +598,7 @@ section h3 {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+    box-shadow: 0 0 0 3px rgba(120, 1, 21, 0.1);
 }
 
 .form-note {
