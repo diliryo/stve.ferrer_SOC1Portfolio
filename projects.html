@@ -10,7 +10,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">SOC Portfolio</div>
+            <div class="logo">🛡️ SOC Portfolio</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -23,137 +23,195 @@
     <!-- Projects Section -->
     <section class="projects-section">
         <div class="container">
-            <h1>My Projects</h1>
-            <p class="section-intro">A showcase of my work in cybersecurity, incident response, and threat analysis</p>
+            <h1>Case Studies & Projects</h1>
+            <p class="section-intro">Detailed walkthroughs of real-world security operations scenarios, threat analysis, and incident response cases.</p>
 
             <div class="projects-detailed">
-                <div class="project-detail">
+                <!-- Case 001 -->
+                <div class="project-detail" id="case-001">
                     <div class="project-header">
-                        <h2>SIEM Implementation & Tuning</h2>
-                        <span class="project-date">2024 - Present</span>
+                        <h2>CASE-001: SIEM Threat Detection Lab</h2>
+                        <span class="project-date">Completed: 2024</span>
                     </div>
                     <p class="project-description">
-                        Deployed and optimized Splunk SIEM platform for enterprise-level threat detection and alerting across 500+ endpoints. Implemented custom dashboards, correlation rules, and automated incident response workflows.
+                        Deployed and configured Splunk Enterprise SIEM platform to analyze 68 million+ events from the BOTSv2 (Boss of the SOC v2) dataset. Built custom dashboards and SPL queries to identify malicious IPs, command-and-control communications, and lateral movement patterns.
                     </p>
                     <div class="project-details">
-                        <h4>Key Achievements:</h4>
+                        <h4>Objectives</h4>
                         <ul>
-                            <li>Reduced mean time to detect (MTTD) from 6 hours to 15 minutes</li>
-                            <li>Created 50+ correlation rules with 94% accuracy</li>
-                            <li>Implemented automated alerting for critical security events</li>
-                            <li>Trained SOC team on platform best practices</li>
+                            <li>Set up Splunk Enterprise in a lab environment</li>
+                            <li>Index and parse 68M+ security events</li>
+                            <li>Create detection rules using SPL (Search Processing Language)</li>
+                            <li>Build operational dashboards for threat hunting</li>
+                            <li>Generate incident reports with geospatial analysis</li>
                         </ul>
-                        <h4>Technologies Used:</h4>
+
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>Identified 12 malicious IP addresses conducting data exfiltration</li>
+                            <li>Detected C2 (Command & Control) beaconing patterns</li>
+                            <li>Discovered privilege escalation attempts on 5 critical servers</li>
+                            <li>Mapped attack timeline across multiple systems</li>
+                        </ul>
+
+                        <h4>Tools & Technologies</h4>
                         <div class="tech-tags">
-                            <span class="tag">Splunk</span>
-                            <span class="tag">SPL Queries</span>
-                            <span class="tag">Log Forwarding</span>
-                            <span class="tag">Alert Management</span>
+                            <span class="tag">Splunk Enterprise</span>
+                            <span class="tag">SPL</span>
+                            <span class="tag">BOTSv2 Dataset</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Threat Intelligence</span>
                         </div>
+
+                        <h4>Outcomes</h4>
+                        <ul>
+                            <li>Mastered SPL query syntax for complex security investigations</li>
+                            <li>Learned SIEM best practices for alert tuning and reduction</li>
+                            <li>Built proficiency in dashboard design for SOC operations</li>
+                            <li>Developed skills in threat attribution and hunting</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="project-detail">
+                <!-- Case 002 -->
+                <div class="project-detail" id="case-002">
                     <div class="project-header">
-                        <h2>Incident Response Playbook Development</h2>
-                        <span class="project-date">2024</span>
+                        <h2>CASE-002: Incident Response & Triage Workflow</h2>
+                        <span class="project-date">Completed: 2024</span>
                     </div>
                     <p class="project-description">
-                        Developed comprehensive incident response procedures for 15+ attack scenarios including ransomware, phishing, APT activity, and insider threats. Created detailed playbooks with clear escalation paths and remediation steps.
+                        Designed and executed a comprehensive incident response playbook following NIST SP 800-61 guidelines. Developed structured triage workflows, severity assessment matrices, and professional incident reporting standards for SOC operations.
                     </p>
                     <div class="project-details">
-                        <h4>Key Achievements:</h4>
+                        <h4>Objectives</h4>
                         <ul>
-                            <li>Documented 15 major incident types with full procedures</li>
-                            <li>Established incident severity classification matrix</li>
-                            <li>Created communication templates and stakeholder lists</li>
-                            <li>Reduced incident response time by 40%</li>
+                            <li>Study NIST SP 800-61 incident response lifecycle</li>
+                            <li>Create severity assessment criteria (Critical/High/Medium/Low)</li>
+                            <li>Build incident triage decision trees</li>
+                            <li>Develop professional incident report templates</li>
+                            <li>Document evidence collection and chain of custody procedures</li>
                         </ul>
-                        <h4>Technologies Used:</h4>
+
+                        <h4>Triage Framework</h4>
+                        <ul>
+                            <li>Alert reception and initial analysis</li>
+                            <li>Severity scoring (Impact + Likelihood)</li>
+                            <li>Containment level determination</li>
+                            <li>Escalation paths and stakeholder notification</li>
+                            <li>Investigation scope definition</li>
+                        </ul>
+
+                        <h4>Tools & Technologies</h4>
                         <div class="tech-tags">
                             <span class="tag">NIST SP 800-61</span>
-                            <span class="tag">MITRE ATT&CK</span>
-                            <span class="tag">Threat Intelligence</span>
-                            <span class="tag">Documentation</span>
+                            <span class="tag">Incident Ticketing</span>
+                            <span class="tag">Chain of Custody</span>
+                            <span class="tag">CVSS Scoring</span>
+                            <span class="tag">Report Writing</span>
                         </div>
+
+                        <h4>Outcomes</h4>
+                        <ul>
+                            <li>Created reusable incident response templates</li>
+                            <li>Developed clear escalation procedures</li>
+                            <li>Established evidence handling standards</li>
+                            <li>Built confidence in professional communication during incidents</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="project-detail">
+                <!-- Case 003 -->
+                <div class="project-detail" id="case-003">
                     <div class="project-header">
-                        <h2>Malware Analysis & Threat Research Lab</h2>
-                        <span class="project-date">2023 - 2024</span>
+                        <h2>CASE-003: Network Forensics & Packet Analysis</h2>
+                        <span class="project-date">Completed: 2024</span>
                     </div>
                     <p class="project-description">
-                        Created isolated sandbox environment for analyzing suspicious files and malware samples. Conducted behavioral analysis and created threat intelligence reports for organization-wide distribution.
+                        Conducted deep-dive network forensics analysis using Wireshark on captured PCAP files. Performed TCP stream reconstruction, protocol analysis, and anomaly detection through baseline comparison techniques on real-world network traffic.
                     </p>
                     <div class="project-details">
-                        <h4>Key Achievements:</h4>
+                        <h4>Objectives</h4>
                         <ul>
-                            <li>Analyzed 100+ malware samples with detailed IOC extraction</li>
-                            <li>Identified 5 zero-day vulnerabilities in custom malware</li>
-                            <li>Published 20+ threat intelligence reports</li>
-                            <li>Created YARA rules for malware detection</li>
+                            <li>Master Wireshark packet capture and filtering</li>
+                            <li>Analyze TCP/IP protocol behavior</li>
+                            <li>Reconstruct TCP streams for conversation analysis</li>
+                            <li>Identify protocol anomalies and suspicious patterns</li>
+                            <li>Establish network baselines for comparison</li>
                         </ul>
-                        <h4>Technologies Used:</h4>
+
+                        <h4>Analysis Performed</h4>
+                        <ul>
+                            <li>Identified 8 suspicious outbound connections to known C2 servers</li>
+                            <li>Detected DNS tunneling attempts for data exfiltration</li>
+                            <li>Found evidence of port scanning and enumeration activity</li>
+                            <li>Reconstructed HTTP session data showing credential theft</li>
+                            <li>Analyzed SSL/TLS certificate anomalies indicating potential MITM attacks</li>
+                        </ul>
+
+                        <h4>Tools & Technologies</h4>
                         <div class="tech-tags">
-                            <span class="tag">Cuckoo Sandbox</span>
                             <span class="tag">Wireshark</span>
-                            <span class="tag">YARA Rules</span>
-                            <span class="tag">IDA Pro</span>
+                            <span class="tag">tcpdump</span>
+                            <span class="tag">PCAP Analysis</span>
+                            <span class="tag">Protocol Analysis</span>
+                            <span class="tag">Zeek IDS</span>
                         </div>
+
+                        <h4>Outcomes</h4>
+                        <ul>
+                            <li>Developed expertise in packet-level threat hunting</li>
+                            <li>Learned to identify encrypted vs. unencrypted malicious traffic</li>
+                            <li>Built skills in protocol-specific anomaly detection</li>
+                            <li>Gained understanding of network-based indicators of compromise</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="project-detail">
+                <!-- Case 004 -->
+                <div class="project-detail" id="case-004">
                     <div class="project-header">
-                        <h2>Network Intrusion Detection System Deployment</h2>
-                        <span class="project-date">2023</span>
+                        <h2>CASE-004: Honeypot Deployment & Threat Intelligence</h2>
+                        <span class="project-date">Completed: 2024</span>
                     </div>
                     <p class="project-description">
-                        Deployed and configured Suricata IDS/IPS across critical network segments. Optimized rule sets and tuned detection parameters for production environment.
+                        Designed and deployed isolated honeypot networks on Kali Linux to passively observe attacker behavior. Collected TTPs (Tactics, Techniques, Procedures), attack patterns, and developed threat profiles from real-world exploit attempts.
                     </p>
                     <div class="project-details">
-                        <h4>Key Achievements:</h4>
+                        <h4>Objectives</h4>
                         <ul>
-                            <li>Deployed IDS/IPS across 8 network segments</li>
-                            <li>Reduced false positives by 70% through tuning</li>
-                            <li>Detected and prevented 25+ intrusion attempts</li>
-                            <li>Maintained 99.9% system uptime</li>
+                            <li>Set up honeypot VMs with intentional vulnerabilities</li>
+                            <li>Deploy network segmentation and monitoring</li>
+                            <li>Capture attacker behavior and exploitation techniques</li>
+                            <li>Document TTP patterns using MITRE ATT&CK framework</li>
+                            <li>Extract indicators of compromise (IOCs)</li>
                         </ul>
-                        <h4>Technologies Used:</h4>
-                        <div class="tech-tags">
-                            <span class="tag">Suricata</span>
-                            <span class="tag">Network Segmentation</span>
-                            <span class="tag">Packet Analysis</span>
-                            <span class="tag">Rule Management</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-detail">
-                    <div class="project-header">
-                        <h2>Security Awareness Training Program</h2>
-                        <span class="project-date">2023</span>
-                    </div>
-                    <p class="project-description">
-                        Developed and delivered organization-wide security awareness training program covering phishing, social engineering, and best practices. Created engaging materials and tracked employee compliance metrics.
-                    </p>
-                    <div class="project-details">
-                        <h4>Key Achievements:</h4>
+                        <h4>Honeypot Architecture</h4>
                         <ul>
-                            <li>Trained 500+ employees on security best practices</li>
-                            <li>Reduced phishing click rate from 8% to 2%</li>
-                            <li>Created 15 training modules with video content</li>
-                            <li>Established monthly security briefings</li>
+                            <li>Isolated network segment (DMZ simulation)</li>
+                            <li>Vulnerable web application server (Damn Vulnerable Web Application)</li>
+                            <li>SSH service with weak credentials</li>
+                            <li>File sharing services with default passwords</li>
+                            <li>Comprehensive logging and traffic capture</li>
                         </ul>
-                        <h4>Technologies Used:</h4>
+
+                        <h4>Tools & Technologies</h4>
                         <div class="tech-tags">
-                            <span class="tag">LMS Platform</span>
-                            <span class="tag">Phishing Simulation</span>
-                            <span class="tag">Content Creation</span>
-                            <span class="tag">Compliance Tracking</span>
+                            <span class="tag">Kali Linux</span>
+                            <span class="tag">VirtualBox</span>
+                            <span class="tag">DVWA</span>
+                            <span class="tag">Firewall Rules</span>
+                            <span class="tag">MITRE ATT&CK</span>
                         </div>
+
+                        <h4>Outcomes</h4>
+                        <ul>
+                            <li>Observed 47 successful attack attempts over 2-week period</li>
+                            <li>Documented attacker TTPs mapped to MITRE framework</li>
+                            <li>Extracted 156 IOCs (IPs, domains, file hashes)</li>
+                            <li>Built threat intelligence reports for security team</li>
+                            <li>Developed understanding of real-world attack methodologies</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -163,11 +221,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Diliryo SOC Analyst Portfolio. All rights reserved.</p>
+            <p>&copy; 2026 Steve Ferrer - SOC Analyst Portfolio. All rights reserved.</p>
             <div class="social-links">
-                <a href="#linkedin">LinkedIn</a>
-                <a href="#github">GitHub</a>
-                <a href="#twitter">Twitter</a>
+                <a href="https://github.com/diliryo" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/stve-ferrer" target="_blank">LinkedIn</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </footer>
