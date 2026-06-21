@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <!-- Background -->
+  <rect width="800" height="560" fill="#fffef8"/>
+  <!-- Outer border -->
+  <rect x="16" y="16" width="768" height="528" fill="none" stroke="#780115" stroke-width="3"/>
+  <!-- Inner border -->
+  <rect x="28" y="28" width="744" height="504" fill="none" stroke="#f7b638" stroke-width="1.5"/>
+
+  <!-- Header bar -->
+  <rect x="16" y="16" width="768" height="80" fill="#780115"/>
+
+  <!-- Shield icon -->
+  <text x="400" y="78" font-family="Arial" font-size="42" text-anchor="middle" fill="white">🛡️</text>
+
+  <!-- CERTIFICATE OF COMPLETION label -->
+  <text x="400" y="136" font-family="Georgia, serif" font-size="13" fill="#780115" text-anchor="middle" letter-spacing="4">CERTIFICATE OF COMPLETION</text>
+
+  <!-- Decorative line -->
+  <line x1="120" y1="150" x2="680" y2="150" stroke="#f7b638" stroke-width="1.5"/>
+
+  <!-- THIS IS TO CERTIFY THAT -->
+  <text x="400" y="178" font-family="Georgia, serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="2">THIS IS TO CERTIFY THAT</text>
+
+  <!-- Name -->
+  <text x="400" y="260" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#202124" text-anchor="middle">Steve Ferrer</text>
+
+  <!-- HAS SUCCESSFULLY COMPLETED -->
+  <text x="400" y="292" font-family="Georgia, serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="2">HAS SUCCESSFULLY COMPLETED</text>
+
+  <!-- Decorative line -->
+  <line x1="200" y1="308" x2="600" y2="308" stroke="#f7b638" stroke-width="1"/>
+
+  <!-- Cert title lines -->
+  <text x="400" y="210" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#780115" text-anchor="middle">Boss of the SOC v2 (BOTS)</text>
+
+  <!-- Issuer -->
+  <text x="400" y="380" font-family="Georgia, serif" font-size="16" fill="#5f6368" text-anchor="middle">Issued by Splunk Community</text>
+
+  <!-- Bottom line -->
+  <line x1="120" y1="460" x2="680" y2="460" stroke="#780115" stroke-width="1"/>
+
+  <!-- Signature label -->
+  <text x="200" y="490" font-family="Georgia, serif" font-size="12" fill="#888" text-anchor="middle">Authorized Signature</text>
+  <text x="600" y="490" font-family="Georgia, serif" font-size="12" fill="#888" text-anchor="middle">Date of Completion</text>
+  <text x="200" y="510" font-family="Georgia, serif" font-size="13" fill="#780115" text-anchor="middle">________________________</text>
+  <text x="600" y="510" font-family="Georgia, serif" font-size="13" fill="#780115" text-anchor="middle">2025 – 2026</text>
+</svg>
