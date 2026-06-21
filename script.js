@@ -22,7 +22,6 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
-
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').slice(1) === current) {
@@ -42,33 +41,23 @@ if (contactForm) {
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
         
-        // Validate form fields
         if (!name || !email || !subject || !message) {
             alert('Please fill in all fields');
             return;
         }
         
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address');
             return;
         }
         
-        // Show success message
         alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-        
-        // Reset form
         contactForm.reset();
-        
-        // Note: To make this form actually send emails, you would need to:
-        // 1. Set up a backend service (Node.js, Python, PHP, etc.)
-        // 2. Use a service like Formspree, EmailJS, or similar
-        // 3. Update this code to send the data to your backend
     });
 }
 
-// Mobile menu toggle (if you add a mobile menu in the future)
+// Mobile menu toggle
 function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
     if (navLinks) {
@@ -91,7 +80,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all cards and sections
 document.querySelectorAll('.skill-card, .project-card, .project-detail, .certification').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -102,7 +90,6 @@ document.querySelectorAll('.skill-card, .project-card, .project-detail, .certifi
 // Navbar scroll effect
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
-
 window.addEventListener('scroll', () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
@@ -119,5 +106,34 @@ window.addEventListener('scroll', () => {
 const year = new Date().getFullYear();
 const footerText = document.querySelector('.footer p');
 if (footerText) {
-    footerText.textContent = `© ${year} Diliryo SOC Analyst Portfolio. All rights reserved.`;
+    footerText.textContent = `© ${year} Steve Ferrer - SOC Analyst Portfolio. All rights reserved.`;
 }
+
+// =====================
+// Certificate Modals
+// =====================
+function openCertModal(id) {
+    document.getElementById(id).classList.add('active');
+}
+
+function closeCertModal(id) {
+    document.getElementById(id).classList.remove('active');
+}
+
+// Close modal when clicking the dark backdrop
+document.querySelectorAll('.cert-modal').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            this.classList.remove('active');
+        }
+    });
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.cert-modal.active').forEach(function(m) {
+            m.classList.remove('active');
+        });
+    }
+});
